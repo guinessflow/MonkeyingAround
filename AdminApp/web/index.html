@@ -34,26 +34,36 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = null;
+    const serviceWorkerVersion = '{{flutter_service_worker_version}}';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
+  <script src="flutter_bootstrap.js" async></script>
 </head>
 <body>
   <script>
     window.addEventListener('load', function(ev) {
+      {{flutter_js}}
+      {{flutter_build_config}}
       // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
+      _flutter.loader.load({
         serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
+          serviceWorkerVersion: {{flutter_service_worker_version}},
         },
         onEntrypointLoaded: function(engineInitializer) {
           engineInitializer.initializeEngine().then(function(appRunner) {
+            if(document.getElementById('splash'))
+              document.getElementById('splash').remove();
             appRunner.runApp();
           });
         }
       });
     });
   </script>
+  <picture id="splash"   >
+    <source srcset="splash/img/iso_gradient_vert-x3.png 1x" media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)">
+    <source srcset="splash/img/iso_gradient_vert-x3.png 1x" media="(prefers-color-scheme: dark)">
+    <img class="center" src="splash/img/iso_gradient_vert-x3.png" width="500" height="500"  alt="LOGO"/>
+  </picture>
 </body>
 </html>
