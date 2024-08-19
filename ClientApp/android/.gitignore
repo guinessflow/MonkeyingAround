@@ -1,0 +1,72 @@
+gradle-wrapper.jar
+/.gradle
+/captures/
+/gradlew
+/gradlew.bat
+/local.properties
+GeneratedPluginRegistrant.java
+
+# Remember to never publicly share your keystore.
+# See https://flutter.dev/docs/deployment/android#reference-the-keystore-from-the-app
+key.properties
+**/*.keystore
+**/*.jks
+<<<<<<< Updated upstream
+=======
+
+#(added from this point down 8/19/24) built application files
+*.apk
+*.ap_
+*.aab
+                           
+# files for the dex VM
+*.dex
+                            
+# Java class files
+*.class
+                            
+# generated files
+bin/
+gen/
+                            
+# Local configuration file (sdk path, etc)
+local.properties
+                        
+# Windows thumbnail db
+Thumbs.db
+                
+# OSX files
+.DS_Store
+                            
+# Android Studio
+*.iml
+.idea
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+.gradle
+build/
+.navigation
+captures/
+output.json 
+    
+#NDK
+obj/
+.externalNativeBuild
+
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+/*/out
+/*/*/build
+/*/*/production
+*.iws
+*.ipr
+*~
+*.swp
+>>>>>>> Stashed changes

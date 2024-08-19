@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "744608274208",
+    "project_id": "monkeyingaround-fe6c2",
+    "storage_bucket": "monkeyingaround-fe6c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744608274208:android:7d1df28f0d9d487fbd2945",
+        "android_client_info": {
+          "package_name": "com.example.adminapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqJc9K_AqdYPXTmW9FK_299hVIQEXM0sM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744608274208:android:e2c9d8b9410430ccbd2945",
+        "android_client_info": {
+          "package_name": "com.example.clientapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqJc9K_AqdYPXTmW9FK_299hVIQEXM0sM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
