@@ -4,11 +4,7 @@ import '/services/firebase_service.dart';
 class AddCategoryOverlay extends StatefulWidget {
   final VoidCallback onClose;
 
-<<<<<<< Updated upstream
   const AddCategoryOverlay({Key? key, required this.onClose}) : super(key: key);
-=======
-  const AddCategoryOverlay({super.key, required this.onClose});
->>>>>>> Stashed changes
 
   @override
   _AddCategoryOverlayState createState() => _AddCategoryOverlayState();

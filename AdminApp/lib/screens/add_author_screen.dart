@@ -12,11 +12,7 @@ import '/utils/database_helper.dart';
 class AddAuthorScreen extends StatefulWidget {
   final VoidCallback? backButton;
 
-<<<<<<< Updated upstream
   const AddAuthorScreen({Key? key, this.backButton}) : super(key: key);
-=======
-  const AddAuthorScreen({super.key, this.backButton});
->>>>>>> Stashed changes
 
   @override
   _AddAuthorScreenState createState() => _AddAuthorScreenState();
@@ -235,11 +231,7 @@ class _AddAuthorScreenState extends State<AddAuthorScreen> {
                 child: const Text('Add Author'),
               ),
               if (_isUploading)
-<<<<<<< Updated upstream
                 CircularProgressIndicator(),
-=======
-                const CircularProgressIndicator(),
->>>>>>> Stashed changes
               UploadProgressIndicator(progressStream: _uploadProgressStreamController.stream),
             ],
           ),

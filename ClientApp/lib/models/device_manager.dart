@@ -137,15 +137,10 @@ class DeviceManager {
     };
 
     // Set userId and fcmToken fields if available
-<<<<<<< Updated upstream
     if (userId != null) {
       deviceData['user_id'] = userId;
     }
 
-=======
-    deviceData['user_id'] = userId;
-  
->>>>>>> Stashed changes
     if (fcmToken != null) {
       deviceData['fcm_token'] = fcmToken;
     }

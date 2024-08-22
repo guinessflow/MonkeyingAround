@@ -246,21 +246,13 @@ class _ContentCarouselState extends State<ContentCarousel> {
         });
 
         // Save app settings to shared preferences
-<<<<<<< Updated upstream
         if (_appName != null && _appName.isNotEmpty) {
-=======
-        if (_appName.isNotEmpty) {
->>>>>>> Stashed changes
           prefs.setString('appName', _appName);
         }
       }
 
       // If _appName is still null or empty, load it from PackageInfo
-<<<<<<< Updated upstream
       if (_appName == null || _appName.isEmpty) {
-=======
-      if (_appName.isEmpty) {
->>>>>>> Stashed changes
         final packageInfo = await PackageInfo.fromPlatform();
         setState(() {
           _appName = packageInfo.appName;

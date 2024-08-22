@@ -12,11 +12,7 @@ import '/utils/database_helper.dart';
 class AddCultureScreen extends StatefulWidget {
   final VoidCallback? backButton;
 
-<<<<<<< Updated upstream
   const AddCultureScreen({Key? key, this.backButton}) : super(key: key);
-=======
-  const AddCultureScreen({super.key, this.backButton});
->>>>>>> Stashed changes
 
   @override
   _AddCultureScreenState createState() => _AddCultureScreenState();
@@ -234,11 +230,7 @@ class _AddCultureScreenState extends State<AddCultureScreen> {
                 child: const Text('Add Culture'),
               ),
               if (_isUploading)
-<<<<<<< Updated upstream
                 CircularProgressIndicator(),
-=======
-                const CircularProgressIndicator(),
->>>>>>> Stashed changes
               UploadProgressIndicator(progressStream: _uploadProgressStreamController.stream),
             ],
           ),

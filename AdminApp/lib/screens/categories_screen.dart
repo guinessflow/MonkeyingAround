@@ -12,11 +12,7 @@ import 'add_category_screen.dart';
 class CategoriesScreen extends StatefulWidget {
   final Function backButton;
 
-<<<<<<< Updated upstream
   const CategoriesScreen({Key? key, required this.backButton}) : super(key: key);
-=======
-  const CategoriesScreen({super.key, required this.backButton});
->>>>>>> Stashed changes
 
   @override
   _CategoriesScreenState createState() => _CategoriesScreenState();

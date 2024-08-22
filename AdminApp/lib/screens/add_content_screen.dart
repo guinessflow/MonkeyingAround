@@ -8,12 +8,8 @@ class AddContentScreen extends StatefulWidget {
   final bool isEditing;
 
   const AddContentScreen(
-<<<<<<< Updated upstream
       {Key? key, this.contentId, this.backButton, this.isEditing = false})
       : super(key: key);
-=======
-      {super.key, this.contentId, this.backButton, this.isEditing = false});
->>>>>>> Stashed changes
 
   @override
   _AddContentScreenState createState() => _AddContentScreenState();
@@ -29,11 +25,7 @@ class _AddContentScreenState extends State<AddContentScreen> {
   final FirebaseService _firebaseService = FirebaseService();
   bool _isCategoryContent = true;
   bool _isCultureContent = false;
-<<<<<<< Updated upstream
   bool _isAuthorContent = false;
-=======
-  final bool _isAuthorContent = false;
->>>>>>> Stashed changes
   String _contentText = '';
   String _selectedCategory = '';
   String _selectedAuthor = '';
@@ -266,11 +258,7 @@ class _AddContentScreenState extends State<AddContentScreen> {
             if (_isLoading)
               Container(
                 color: Colors.black.withOpacity(0.5),
-<<<<<<< Updated upstream
                 child: Center(
-=======
-                child: const Center(
->>>>>>> Stashed changes
                   child: CircularProgressIndicator(
                     backgroundColor: Colors.white,
                   ),

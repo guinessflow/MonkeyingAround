@@ -1,25 +1,18 @@
 import 'package:flutter/material.dart';
 import '/screens/app_settings_screen.dart';
 import '/screens/categories_screen.dart';
-<<<<<<< Updated upstream
 import '/screens/authors_screen.dart';
-=======
->>>>>>> Stashed changes
 import '/screens/cultures_screen.dart';
 import '/screens/content_screen.dart';
 import '/screens/backgrounds_screen.dart';
 import '/screens/adsettings_screen.dart';
 import '/screens/purchases_screen.dart';
 import '/screens/users_screen.dart';
-<<<<<<< Updated upstream
 import '/screens/user_favorites_screen.dart';
 import '/screens/daily_notifications_screen.dart';
 import '/screens/send_notification_screen.dart';
 import '/screens/promo_notifications_screen.dart';
 import '/screens/notifications_settings.dart';
-=======
-import '/screens/send_notification_screen.dart';
->>>>>>> Stashed changes
 import '/screens/contacts_messages_screen.dart';
 
 class HomeScreen extends StatefulWidget {

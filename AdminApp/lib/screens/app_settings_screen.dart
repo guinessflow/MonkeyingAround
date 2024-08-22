@@ -4,18 +4,13 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 class AppSettingsScreen extends StatefulWidget {
   final VoidCallback backButton;
 
-<<<<<<< Updated upstream
   const AppSettingsScreen({Key? key, required this.backButton}) : super(key: key);
-=======
-  const AppSettingsScreen({super.key, required this.backButton});
->>>>>>> Stashed changes
 
   @override
   _AppSettingsScreenState createState() => _AppSettingsScreenState();
 }
 
 class _AppSettingsScreenState extends State<AppSettingsScreen> {
-<<<<<<< Updated upstream
   TextEditingController _apiUrlController = TextEditingController();
   TextEditingController _keyController = TextEditingController();
   TextEditingController _appNameController = TextEditingController();
@@ -27,19 +22,6 @@ class _AppSettingsScreenState extends State<AppSettingsScreen> {
   TextEditingController _fontSizeController = TextEditingController();
   String _selectedFontFamily = 'Roboto'; // Default font family
   List<String> _fontFamilies = [
-=======
-  final TextEditingController _apiUrlController = TextEditingController();
-  final TextEditingController _keyController = TextEditingController();
-  final TextEditingController _appNameController = TextEditingController();
-  final TextEditingController _privacyPolicyController = TextEditingController();
-  final TextEditingController _termsOfServiceController = TextEditingController();
-  final TextEditingController _productIdController = TextEditingController();
-  final TextEditingController _thankyouCopyController = TextEditingController();
-  final TextEditingController _upgradeCopyController = TextEditingController();
-  final TextEditingController _fontSizeController = TextEditingController();
-  String _selectedFontFamily = 'Roboto'; // Default font family
-  final List<String> _fontFamilies = [
->>>>>>> Stashed changes
     'DancingScript',
     'Roboto',
     'Roobert',
@@ -210,11 +192,7 @@ class _AppSettingsScreenState extends State<AppSettingsScreen> {
         ),
       ),
       body: _isLoading
-<<<<<<< Updated upstream
           ? Center(child: CircularProgressIndicator())
-=======
-          ? const Center(child: CircularProgressIndicator())
->>>>>>> Stashed changes
           : SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -274,11 +252,7 @@ class _AppSettingsScreenState extends State<AppSettingsScreen> {
         TextField(
           controller: controller,
           decoration: InputDecoration(
-<<<<<<< Updated upstream
             border: OutlineInputBorder(),
-=======
-            border: const OutlineInputBorder(),
->>>>>>> Stashed changes
             hintText: 'Enter $label',
           ),
         ),
@@ -299,11 +273,7 @@ class _AppSettingsScreenState extends State<AppSettingsScreen> {
           controller: controller,
           maxLines: null, // Allows for multiline input
           decoration: InputDecoration(
-<<<<<<< Updated upstream
             border: OutlineInputBorder(),
-=======
-            border: const OutlineInputBorder(),
->>>>>>> Stashed changes
             hintText: 'Enter $label',
           ),
         ),

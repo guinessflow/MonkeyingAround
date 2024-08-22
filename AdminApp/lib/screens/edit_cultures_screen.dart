@@ -3,11 +3,7 @@ import 'package:flutter/material.dart';
 class EditCulturesScreen extends StatelessWidget {
   final VoidCallback? backButton;
 
-<<<<<<< Updated upstream
   const EditCulturesScreen({Key? key, this.backButton}) : super(key: key);
-=======
-  const EditCulturesScreen({super.key, this.backButton});
->>>>>>> Stashed changes
 
   @override
   Widget build(BuildContext context) {

@@ -11,11 +11,7 @@ import '/services/firebase_service.dart';
 class AddBackgroundImgScreen extends StatefulWidget {
   final VoidCallback? backButton;
 
-<<<<<<< Updated upstream
   const AddBackgroundImgScreen({Key? key, this.backButton}) : super(key: key);
-=======
-  const AddBackgroundImgScreen({super.key, this.backButton});
->>>>>>> Stashed changes
 
   @override
   _AddBackgroundImgScreenState createState() => _AddBackgroundImgScreenState();

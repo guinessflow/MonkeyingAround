@@ -14,11 +14,7 @@ void defaultBackButton() {}
 class AuthorsScreen extends StatefulWidget {
   final Function backButton;
 
-<<<<<<< Updated upstream
   const AuthorsScreen({Key? key, this.backButton = defaultBackButton}) : super(key: key);
-=======
-  const AuthorsScreen({super.key, this.backButton = defaultBackButton});
->>>>>>> Stashed changes
 
   @override
   _AuthorsScreenState createState() => _AuthorsScreenState();

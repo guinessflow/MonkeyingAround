@@ -6,11 +6,7 @@
     <application
         android:label="JokesApp"
         android:name="${applicationName}"
-<<<<<<< Updated upstream
         android:icon="@mipmap/ic_launcher_2">
-=======
-        android:icon="@mipmap/ic_launcher">
->>>>>>> Stashed changes
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
@@ -40,11 +36,7 @@
             android:value="2" />
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-<<<<<<< Updated upstream
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
-=======
             android:value="ca-app-pub-2505779865290725~8936151003"/>
->>>>>>> Stashed changes
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="@string/default_notification_channel_id" />

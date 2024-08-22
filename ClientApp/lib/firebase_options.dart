@@ -65,9 +65,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'monkeyingaround-fe6c2.appspot.com',
     iosBundleId: 'com.example.clientapp',
   );
-<<<<<<< Updated upstream
-}
-=======
 
 }
->>>>>>> Stashed changes

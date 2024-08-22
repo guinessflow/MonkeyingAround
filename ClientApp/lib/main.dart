@@ -5,10 +5,6 @@ import 'package:provider/provider.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:firebase_core/firebase_core.dart';
-<<<<<<< Updated upstream
-=======
-import 'firebase_options.dart';
->>>>>>> Stashed changes
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -42,13 +38,7 @@ void main() async {
   await SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
 
-<<<<<<< Updated upstream
   await Firebase.initializeApp();
-=======
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
->>>>>>> Stashed changes
   await DatabaseHelper.instance.init();
 
   await InAppPurchase.instance.isAvailable();
@@ -137,12 +127,9 @@ class _MainAppState extends State<MainApp> {
           _initialized = true;
         });
 
-<<<<<<< Updated upstream
-        //Navigator.of(context).pushReplacementNamed('/main'); (changed 8/19/24 and it cleared error)
+        //Navigator.of(context).pushReplacementNamed('/main'); updated to the below 8/20/24
         Navigator.of(context, rootNavigator: true).pushNamed("/main");
-=======
-        Navigator.of(context).pushReplacementNamed('/main');
->>>>>>> Stashed changes
+        
       } catch (e) {
         print('Error initializing app: $e');
         // Handle error appropriately
@@ -234,10 +221,6 @@ class _MainAppState extends State<MainApp> {
         child: Consumer<ThemeProvider>(
           builder: (context, themeProvider, child) {
             return MaterialApp(
-<<<<<<< Updated upstream
-=======
-              debugShowCheckedModeBanner: false,
->>>>>>> Stashed changes
               title: 'MyApp',
               theme: ThemeData.light(),
               darkTheme: ThemeData.dark(),
@@ -246,22 +229,12 @@ class _MainAppState extends State<MainApp> {
                 focusNode: FocusNode(),
                 showWelcomeContentNotifier: ValueNotifier<bool>(true),
               ),
-<<<<<<< Updated upstream
               routes: {
                 '/main': (BuildContext context) => MainScreen(
-=======
-              routes: <String,WidgetBuilder>{
-                '/main': (context) => MainScreen(
->>>>>>> Stashed changes
                   focusNode: FocusNode(),
                   showWelcomeContentNotifier: ValueNotifier<bool>(true),
                 ),
               },
-<<<<<<< Updated upstream
-=======
-              //initialRoute: MainScreen.routeName,
-              //initialroute added and <String,WidgetBuilder> added
->>>>>>> Stashed changes
             );
           },
         ),
@@ -279,19 +252,10 @@ class MainScreen extends StatefulWidget {
   final FocusNode focusNode;
   final ValueNotifier<bool> showWelcomeContentNotifier;
 
-<<<<<<< Updated upstream
   const MainScreen({Key? key, required this.focusNode, required this.showWelcomeContentNotifier}) : super(key: key);
   @override
   _MainScreenState createState() => _MainScreenState();
 }
-=======
-  //static const String routeName = "/";
-  const MainScreen({Key? key, required this.focusNode, required this.showWelcomeContentNotifier}) : super(key: key);
-  //final String title;
-  @override
-  _MainScreenState createState() => _MainScreenState();
-} //added static const string routename = "/"; and final string title;
->>>>>>> Stashed changes
 
 class _MainScreenState extends State<MainScreen> with WidgetsBindingObserver {
   final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();

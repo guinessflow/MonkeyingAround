@@ -169,11 +169,7 @@ class _UniversalAdWidgetState extends State<UniversalAdWidget> {
           borderRadius: BorderRadius.circular(10),
           child: Container(
             margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-<<<<<<< Updated upstream
             color: Theme.of(context).colorScheme.background,
-=======
-            color: Theme.of(context).colorScheme.surface,
->>>>>>> Stashed changes
               child: Column(
                 children: [
                   Text(adText),  // Your adText

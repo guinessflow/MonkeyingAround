@@ -5,11 +5,7 @@
     <application
         android:label="AdminApp"
         android:name="${applicationName}"
-<<<<<<< Updated upstream
         android:icon="@mipmap/ic_launcher">
-=======
-        android:icon="@mipmap/ic_launcher_2">
->>>>>>> Stashed changes
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"

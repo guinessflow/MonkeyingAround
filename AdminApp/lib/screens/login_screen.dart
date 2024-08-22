@@ -3,11 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'home_screen.dart';
 
 class LoginScreen extends StatelessWidget {
-<<<<<<< Updated upstream
   const LoginScreen({Key? key});
-=======
-  const LoginScreen({super.key});
->>>>>>> Stashed changes
 
   @override
   Widget build(BuildContext context) {
@@ -77,11 +73,7 @@ class _LoginFormState extends State<_LoginForm> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-<<<<<<< Updated upstream
             Text(
-=======
-            const Text(
->>>>>>> Stashed changes
               'Login to Admin Panel',
               style: TextStyle(
                 fontSize: 24,

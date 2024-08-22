@@ -88,11 +88,7 @@ class _ContentsScreenState extends State<ContentsScreen> {
                       Expanded(
                         child: CustomPaint(
                           painter: ContentBubblePainter(
-<<<<<<< Updated upstream
                             backgroundColor: Theme.of(context).colorScheme.background,
-=======
-                            backgroundColor: Theme.of(context).colorScheme.surface,
->>>>>>> Stashed changes
                             actionIconsPanelHeight: actionIconsPanelHeight,
                           ),
                           child: Padding(

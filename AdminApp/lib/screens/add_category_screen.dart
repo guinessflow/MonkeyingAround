@@ -12,11 +12,7 @@ import '/utils/database_helper.dart';
 class AddCategoryScreen extends StatefulWidget {
   final VoidCallback? backButton;
 
-<<<<<<< Updated upstream
   const AddCategoryScreen({Key? key, this.backButton}) : super(key: key);
-=======
-  const AddCategoryScreen({super.key, this.backButton});
->>>>>>> Stashed changes
 
   @override
   _AddCategoryScreenState createState() => _AddCategoryScreenState();
@@ -245,11 +241,7 @@ class _AddCategoryScreenState extends State<AddCategoryScreen> with ChangeNotifi
                 child: const Text('Add Category'),
               ),
               if (_isUploading)
-<<<<<<< Updated upstream
                 CircularProgressIndicator(),
-=======
-                const CircularProgressIndicator(),
->>>>>>> Stashed changes
               UploadProgressIndicator(progressStream: _uploadProgressStreamController.stream),
             ],
           ),
